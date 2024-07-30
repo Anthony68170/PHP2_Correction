@@ -30,13 +30,18 @@ $capitales=array(
     "France"=>"Paris",
     "Allemagne"=>"Berlin",
     "USA"=>"Washington",
-    "Italie"=>"Rome");
+    "Italie"=>"Rome"
+);
 
     function afficherTableauHTML($capitales){
-        $capitales = mb_strtoupper($capitales);
-        $capitales = ksort($capitales);
+        $majCapitales = mb_strtoupper($capitales);
+        $trierCapitales = ksort($capitales);
+
+        echo $capitales;
     }
-    var_dump($capitales);
+    // var_dump($capitales);
 ?>
 <!-- mb_strtoupper pour transformer en capitale -->
+<!-- https://www.php.net/manual/fr/arrayobject.asort.php -->
 <!-- https://www.php.net/manual/fr/array.sorting.php -->
+<!-- https://www.php.net/manual/fr/function.array.php -->
