@@ -11,9 +11,13 @@
     <tbody>
         <tr>
             <td>France</td><td>Paris</td>
+        </tr>
+        
+        <tr>
+            <td>France</td><td>Paris</td>
             <td>Allemagne</td><td>Berlin</td>
-            <td>France</td><td>Paris</td>
-            <td>France</td><td>Paris</td>
+            <td>USA</td><td>Washington</td>
+            <td>Italie</td><td>Rome</td>
         </tr>
     </tbody>
 </table>
