@@ -33,6 +33,10 @@ $capitales=array(
     "Italie"=>"Rome");
 
     function afficherTableauHTML($capitales){
-
+        $capitales = mb_strtoupper($capitales);
+        $capitales = ksort($capitales);
     }
+    var_dump($capitales);
 ?>
+<!-- mb_strtoupper pour transformer en capitale -->
+<!-- https://www.php.net/manual/fr/array.sorting.php -->
