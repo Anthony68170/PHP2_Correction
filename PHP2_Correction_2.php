@@ -36,7 +36,8 @@ $capitales=array(
     function afficherTableauHTML($capitales){
         $majCapitales = mb_strtoupper($capitales);
         $trierCapitales = ksort($capitales);
-
+        foreach($trierCapitales as $capitales => $capitale){
+        }
         echo $capitales;
     }
     // var_dump($capitales);
@@ -45,3 +46,4 @@ $capitales=array(
 <!-- https://www.php.net/manual/fr/arrayobject.asort.php -->
 <!-- https://www.php.net/manual/fr/array.sorting.php -->
 <!-- https://www.php.net/manual/fr/function.array.php -->
+
