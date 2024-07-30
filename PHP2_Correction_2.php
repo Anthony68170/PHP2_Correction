@@ -33,12 +33,12 @@ $capitales=array(
     "Italie"=>"Rome"
 );
 
+    function afficherTableauHTML ($capitales){
+        ksort($capitales);
     function afficherTableauHTML($capitales){
         $majCapitales = mb_strtoupper($capitales);
-        $trierCapitales = ksort($capitales);
-        foreach($trierCapitales as $capitales => $capitale){
-        }
-        echo $capitales;
+    }    
+        echo afficherTableauHTML($capitales);
     }
     // var_dump($capitales);
 ?>
