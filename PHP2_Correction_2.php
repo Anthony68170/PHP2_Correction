@@ -4,10 +4,18 @@
 <table border="1"> 
     <thead>
         <tr>
-        <th>Pays</th><th>Capitales</th>
+            <th>Pays</th><th>Capitales</th>
         </tr>
         
     </thead>
+    <tbody>
+        <tr>
+            <td>France</td><td>Paris</td>
+            <td>Allemagne</td><td>Berlin</td>
+            <td>France</td><td>Paris</td>
+            <td>France</td><td>Paris</td>
+        </tr>
+    </tbody>
 </table>
 
 <?php
