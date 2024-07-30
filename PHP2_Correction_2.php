@@ -1,9 +1,13 @@
 
+
+<!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/table -->
 <table border="1"> 
-    <head>
-        <tr>Pays</tr>
-        <tr>Capitales</tr>
-    </head>
+    <thead>
+        <tr>
+        <th>Pays</th><th>Capitales</th>
+        </tr>
+        
+    </thead>
 </table>
 
 <?php
