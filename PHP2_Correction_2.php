@@ -33,13 +33,19 @@ $capitales=array(
     "Italie"=>"Rome"
 );
 
+afficherTableauHTML($capitales){
     function afficherTableauHTML($capitales){
-        $majCapitales = mb_strtoupper($capitales);
-        $trierCapitales = ksort($capitales);
-        foreach($trierCapitales as $capitales => $capitale){
-        }
-        echo $capitales;
+        ksort($capitales);
     }
+
+    function $majCapitales($capitales){
+        $majCapitales = mb_strtoupper($capitales);
+    
+    }    
+};
+echo "<tr>
+<th>Pays</th><th>Capitales</th>
+</tr>";
     // var_dump($capitales);
 ?>
 <!-- mb_strtoupper pour transformer en capitale -->
