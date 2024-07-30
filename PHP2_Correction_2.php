@@ -43,9 +43,7 @@ afficherTableauHTML($capitales){
     
     }    
 };
-echo "<tr>
-<th>Pays</th><th>Capitales</th>
-</tr>";
+echo "<tr><th>Pays</th><th>Capitales</th></tr>";
     // var_dump($capitales);
 ?>
 <!-- mb_strtoupper pour transformer en capitale -->
