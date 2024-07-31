@@ -18,15 +18,15 @@
         "Madame",
         "Mademoiselle"
     );
-    function alimenterListeDeroulante { 
-        foreach($elements as $element){
-        echo"<form>";
-        echo "<option value> ".$elements." ".$element." </option>";
-        echo "</form>";
-        
-        echo alimenterListeDeroulante($elements);
+            function alimenterListeDeroulante($elements) { 
+            foreach($elements as $element){
+            echo"<form>";
+            echo "<option value> ".$elements." ".$element." </option>";
+            echo "</form>";
+            
+            echo alimenterListeDeroulante($elements);
+            }
         }
-    }
         ?>
 
         </select>
