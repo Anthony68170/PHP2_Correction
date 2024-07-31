@@ -29,7 +29,7 @@ function afficherInput($nomsInput) {
 echo "<form >";
     foreach ($nomsInput as $key => $value) {
     echo "<label for='{$key}'>{$value}</label><br>";
-    echo "<input type='text' name='{$value}'/>";    
+    echo "<input type='text' name='{$value}'/><br>";    
     }
 echo "</form >";
 }
