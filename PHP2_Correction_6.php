@@ -5,22 +5,20 @@
 </head>  
  
 <select>  
-  <option value="Select">Select</option>}  
-  <option value="Vineet">Vineet Saini</option>  
-  <option value="Sumit">Sumit Sharma</option>  
-  <option value="Dorilal">Dorilal Agarwal</option>  
-  <option value="Omveer">Omveer Singh</option>  
-  <option value="Rohtash">Rohtash Kumar</option>  
-  <option value="Maneesh">Maneesh Tewatia</option>  
-  <option value="Priyanka">Priyanka Sachan</option>  
-  <option value="Neha">Neha Saini</option>  
+  <option value="Select">Select</option>
+  <option value="Monsieur">Monsieur</option>  
+  <option value="Madame">Madame</option> 
+  <option value="Mademoiselle">Mademoiselle</option> 
 </select>   
 </body>  
 </html>
 
 <?php
 
-$elements = array("Monsieur","Madame","Mademoiselle");
-alimenterListeDeroulante($elements);
+// $elements = array("Monsieur","Madame","Mademoiselle"){
+//     foreach($elements as $element){
+    // echo"<select><option value
+//     }}
+// alimenterListeDeroulante($elements);
 
 ?>
