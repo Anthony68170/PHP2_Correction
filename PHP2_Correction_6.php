@@ -15,10 +15,11 @@
 
 <?php
 
-// $elements = array("Monsieur","Madame","Mademoiselle"){
-//     foreach($elements as $element){
-    // echo"<select><option value
-//     }}
-// alimenterListeDeroulante($elements);
+$elements = array("Monsieur","Madame","Mademoiselle");
+    foreach($elements as $element){
+    echo"'<select><option value>'" ".$elements.".$element."";
+    }
+    }
+alimenterListeDeroulante($elements);
 
 ?>
