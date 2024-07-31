@@ -26,14 +26,18 @@ $nomsInput=array(
 );
 
 function afficherInput($nomsInput) {
-    echo "
-        <label for='{$nomsInput}'>{$nomsInput}</label>
-        <input type='text' name='{$nomsInput}'/>
-        ";
+echo "<form >";
+foreach ($nomsInput as $key => $value) {
+echo "<label for='{$key}'>{$value}</label><br>";
+echo "<input type='text' name='{$value}'/>";    
+    }
+    echo "</form >";
 }
-afficherInput($nomsInput);
-// echo $_POST[nomsInput];
+echo afficherInput($nomsInput);
+?>
 
-// https://stackoverflow.com/questions/16757394/can-i-make-a-php-function-to-create-text-input-fields
 
-// <!-- https://g-rossolini.developpez.com/tutoriels/php/formulaires/?page=global -->
+
+<!-- https://stackoverflow.com/questions/16757394/can-i-make-a-php-function-to-create-text-input-fields
+
+https://g-rossolini.developpez.com/tutoriels/php/formulaires/?page=global -->
