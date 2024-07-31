@@ -1,4 +1,4 @@
-
+<!-- 
 
 <form action="submit_form.php" method="post">
    <label>Nom</label><br>
@@ -15,7 +15,7 @@
 
    <button type="submit">Valider</button>
 
-</form>
+</form> -->
 
 <?php
 
@@ -26,12 +26,12 @@ $nomsInput=array(
 );
 
 function afficherInput($nomsInput) {
-    $text = id($nomsInput);
     echo "
-        <label for='{$nomsInput}'>{$text}</label>
+        <label for='{$nomsInput}'>{$nomsInput}</label>
         <input type='text' name='{$nomsInput}'/>
         ";
 }
+afficherInput($nomsInput);
 // echo $_POST[nomsInput];
 
 // https://stackoverflow.com/questions/16757394/can-i-make-a-php-function-to-create-text-input-fields
