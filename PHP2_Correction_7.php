@@ -9,9 +9,10 @@ $elements= array(
 function genererCheckbox($elements){
 echo "<form>";
 
-    foreach($elements as $element=>$checkdate) {
-    echo "<label for='{$element}'>{$element}</label><br>";
-    echo "<input type='checkbox' name='.$element.'/><br>";
+    foreach($elements as $i=>$value) {
+        unset($elements[$i]);
+    echo "<label for='{$i}'>{$value}</label><br>";
+    echo '<input type="checkbox"> <name='.$value.'/><br>';
 }
 
 echo "</form>";
