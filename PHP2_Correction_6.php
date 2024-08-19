@@ -20,7 +20,7 @@
         "Mademoiselle"
     );
             function alimenterListeDeroulante($elements) { 
-            echo "<select  >";
+            echo "<select>";
             foreach($elements as $element){
                 echo"<form>";
                 echo "<option value> ".$element." </option>";

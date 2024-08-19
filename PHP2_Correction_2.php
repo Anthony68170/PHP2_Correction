@@ -1,5 +1,4 @@
-
-<table border="1">
+<!-- <table border="1">
     <thead>
         <tr>
             <th>Pays</th><th>Capitales</th>
@@ -20,7 +19,7 @@
         </tr>
         
     </tbody>
-</table>
+</table> -->
 
 <?php
 

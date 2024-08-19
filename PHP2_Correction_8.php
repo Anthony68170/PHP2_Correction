@@ -31,7 +31,4 @@ function repeterImage($url, $repeter){
 
 // afficherImage($url);
 repeterImage($url, $repeter);
-
-
-
 ?>
