@@ -43,7 +43,7 @@ $tableauValeurs = array(
     array("valeur1","valeur2"),
 );
 // var_dump($tableauValeurs);
-foreach($tableauValeurs as $valeur);
+foreach($tableauValeurs as $valeur){
 var_dump($valeur);
-<br>
+echo "<br>";}
 ?>
