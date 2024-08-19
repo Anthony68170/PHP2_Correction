@@ -45,4 +45,5 @@ $tableauValeurs = array(
 // var_dump($tableauValeurs);
 foreach($tableauValeurs as $valeur);
 var_dump($valeur);
+<br>
 ?>
