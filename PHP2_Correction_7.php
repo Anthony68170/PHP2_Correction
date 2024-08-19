@@ -10,7 +10,7 @@ function genererCheckbox($elements){
 echo "<form>";
 
     foreach($elements as $i=>$value) {
-        unset($elements[$i]);
+        // unset($elements[$i]);
     echo "<label for='{$i}'>{$value}</label><br>";
     echo '<input type="checkbox"> <name='.$value.'/><br>';
 }
