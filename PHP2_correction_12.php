@@ -42,5 +42,8 @@ $tableauValeurs = array(
     25.369,
     array("valeur1","valeur2"),
 );
-var_dump($tableauValeurs);
+// var_dump($tableauValeurs);
+foreach($tableauValeurs as $valeur){
+var_dump($valeur);
+echo "<br>";}
 ?>
