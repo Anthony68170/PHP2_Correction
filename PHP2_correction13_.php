@@ -4,16 +4,24 @@ class Voiture {
   protected $marque;
   protected $modele;
   protected $nbPortes;
-  protected $vitesseActuelle;
-  public function getvitesseActuelle(): string {
-    return $this->vitesseActuelle;
+  private functionMarqueModele (){
+    return "{$this->marque} {$this->modele} {$this->modele}";
   }
+  public function getVoiture (){
+    return $this->getMarqueModele();
+  }
+  // return $this->vitesseActuelle;
+}
+// public function getVoiture(){
+//   return $this->getMarqueModeleNbPorte();
+//   }
+
+// public function getvitesseActuelle(0): string {
   // echo Voiture;
 
 
   // https://grafikart.fr/tutoriels/visibilite-public-private-556
   // https://www.vincent-vanneste.fr/views/php/co/GetterSetter.html
-}
   ?>
 <!-- // $voiture=array(
 //     "marque",
