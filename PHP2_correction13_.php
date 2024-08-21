@@ -1,28 +1,28 @@
 <?php
-
 class Voiture {
-  protected $marque;
-  protected $modele;
-  protected $nbPortes;
-  private functionMarqueModele (){
-    return "{$this->marque} {$this->modele} {$this->modele}";
+  protected $marque="Peugeot";
+  protected $modele="408";
+  protected $nbPortes="5";
+  private function getMarqueModeleNbPortes (){
+    return "{$this->marque} {$this->modele} {$this->nbPortes}";
   }
-  public function getVoiture (){
+  public function getv1 (){
     return $this->getMarqueModele();
-  }
-  // return $this->vitesseActuelle;
 }
+}
+echo $fiche->v1();
 // public function getVoiture(){
-//   return $this->getMarqueModeleNbPorte();
-//   }
-
-// public function getvitesseActuelle(0): string {
-  // echo Voiture;
-
-
-  // https://grafikart.fr/tutoriels/visibilite-public-private-556
-  // https://www.vincent-vanneste.fr/views/php/co/GetterSetter.html
-  ?>
+  //   return $this->getMarqueModeleNbPorte();
+  //   }
+  
+  // public function getvitesseActuelle(0): string {
+    // echo Voiture;
+    
+    
+    // https://grafikart.fr/tutoriels/visibilite-public-private-556
+    // https://www.vincent-vanneste.fr/views/php/co/GetterSetter.html
+    ?>
+    <!-- // return $this->vitesseActuelle; -->
 <!-- // $voiture=array(
 //     "marque",
 //     "modèle",
