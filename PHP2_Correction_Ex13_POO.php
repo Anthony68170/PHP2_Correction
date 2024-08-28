@@ -80,6 +80,13 @@ public function stopper(){
     echo "Le véhicule " .$this->_marque . " " . $this->_modele . "est à l'arrêt " .$vitesse. " km/h. ";
 }
 
+// NOUVELLES METHODES POUR RALENTIR
+public function ralentir(){
+    $this->vitesseActuelle -=$vitesse;
+    if $this->_vitesseActuelle < $vitesse;
+    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralenti de " .$vitesse. " km/h. ";
+}
+
 
 //AFFICHER AVEC LES METHODES
 public function affichagePersVehicule(){
@@ -88,27 +95,28 @@ public function affichagePersVehicule(){
 }
 
 
-// Créer les élements à obtnir
+// Créer les élements à obtenir
 $peugeot408 = new Voiture(array(
     '_marque' => 'Peugeot',
     '_modele' => '408',
     '_nbPortes' => '5',)
 );
 $citroenC4 = new Voiture(array(
-    '_marque' => 'Peugeot',
-    '_modele' => '408',
-    '_nbPortes' => '5',)
+    '_marque' => 'Citroen',
+    '_modele' => 'C4',
+    '_nbPortes' => '3',)
 );
 
-//UTILISER LES OBJETS 
+//UTILISER LES OBJETS/Fonctions 
 $peugeot408->demarrer();
-$peugeot408->accelerer();
+$peugeot408->accelerer(50);
 $peugeot408->affichagePersVehicule();
+$peugeot408->ralentir(10); //Bonus option ralentir
 
 
 $citroenC4->demarrer();
 $citroenC4->stopper();
-$citroenC4->accelerer();
+$citroenC4->accelerer(20);
 
 }
 
