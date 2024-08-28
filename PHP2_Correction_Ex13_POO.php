@@ -7,10 +7,10 @@
 <?php
 // Créer l'objet principal avec ces attributs 
 class Voiture {// definir la classe
-    private $marque;// propriétés privées
-    private $modele;
-    private $nbPortes;
-    private $vitesseActuelle;
+    protected $marque;// propriétés privées
+    protected $modele;
+    protected $nbPortes;
+    protected $vitesseActuelle;
 
 
     public function __construct($valeurs = array()) {
@@ -72,9 +72,46 @@ public function demarrer(){
 
 public function accelerer(){
     $this->vitesseActuelle +=$vitesse;
-    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "accélère à " .$vitesse. " km/h. ";
+    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "accélère de " .$vitesse. " km/h. ";
 }
+
+public function stopper(){
+    $this->vitesseActuelle = 0;
+    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "est à l'arrêt " .$vitesse. " km/h. ";
+}
+
+
+//AFFICHER AVEC LES METHODES
+public function affichagePersVehicule(){
+    echo "Nom et modèle du véhicule : " .$this->_marque .  " . $this->_modele .";
+    echo "La vitesse actuelle est de : " .$this_>_vitesseActuelle . " km/h";
+}
+
+
 // Créer les élements à obtnir
+$peugeot408 = new Voiture(array(
+    '_marque' => 'Peugeot',
+    '_modele' => '408',
+    '_nbPortes' => '5',)
+);
+$citroenC4 = new Voiture(array(
+    '_marque' => 'Peugeot',
+    '_modele' => '408',
+    '_nbPortes' => '5',)
+);
+
+//UTILISER LES OBJETS 
+$peugeot408->demarrer();
+$peugeot408->accelerer();
+$peugeot408->affichagePersVehicule();
+
+
+$citroenC4->demarrer();
+$citroenC4->stopper();
+$citroenC4->accelerer();
+
+}
+
 
 // public function setMarque($marque){
 //     $this->_marque = $marque;
