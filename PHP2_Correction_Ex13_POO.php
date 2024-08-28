@@ -65,7 +65,7 @@ public Function getvitesseActuelle(){
     return $this->vitesseActuelle;
 }
 
-//Placer les METHODES
+//Placer les METHODES / Ce sont les actions à définir/citer
 public function demarrer(){
     echo  "le véhicule " .$this->_marque . " " . $this->_modele . "démarre.";
 }
@@ -80,12 +80,12 @@ public function stopper(){
     echo "Le véhicule " .$this->_marque . " " . $this->_modele . "est à l'arrêt " .$vitesse. " km/h. ";
 }
 
-// NOUVELLES METHODES POUR RALENTIR
-public function ralentir(){
-    $this->vitesseActuelle -=$vitesse;
-    if $this->_vitesseActuelle < $vitesse;
-    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralenti de " .$vitesse. " km/h. ";
-}
+// NOUVELLE METHODE POUR RALENTIR
+// public function ralentir(){
+//     $this->vitesseActuelle -=$vitesse;
+//     if $this->_vitesseActuelle <$vitesse;
+//     echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralenti de " .$vitesse. " km/h. ";
+// }
 
 
 //AFFICHER AVEC LES METHODES
@@ -99,12 +99,12 @@ public function affichagePersVehicule(){
 $peugeot408 = new Voiture(array(
     '_marque' => 'Peugeot',
     '_modele' => '408',
-    '_nbPortes' => '5',)
+    '_nbPortes' => 5,)
 );
 $citroenC4 = new Voiture(array(
     '_marque' => 'Citroen',
     '_modele' => 'C4',
-    '_nbPortes' => '3',)
+    '_nbPortes' => 3,)
 );
 
 //UTILISER LES OBJETS/Fonctions 
