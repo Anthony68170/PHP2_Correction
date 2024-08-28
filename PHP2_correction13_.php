@@ -7,46 +7,47 @@ class Voiture{
   protected $_modele;
   protected $_nbPortes;
   private $vitesseActuelle;
-
   // Utiliser le CONSTRUCTEUR pour initialiser les propriétés de l'objet - elles seront appeler à chaque fois par défaut
   public function __construct($valeurs=array()){
-    $this->_vitesseActuelle=0; // Enregistrer la vitesse actuelle(c'est la valeur par défaut 95% de sat)
+    $this->_vitesseActuelle=0; // Enregistrer la vitesse actuelle (c'est la valeur par défaut 95% de sat)
   }
-    // public function __construct($marque, $modele, $nbPortes){
+  // public function __construct($marque, $modele, $nbPortes){
     // $this->_marque=$marque;
     // $this->_modele=$modele;
     // $this->_nbPortes=$nbPortes;
     // 
-  
-  }
-public function getMarque(){
-return $this->_marque;
-// return $this->_modele;
-// return $this->_marque;
-}
-public function getModele(){
-  return $this->_modele;
-}
-public function getnbPortes(){
-  return $this->_nbPortes;
-}
-public static function combien(){//méthode statique
-  echo self::$_vitesseActuelle."<br/>";
-}
-                                            // public function getvitesseActuelle(){
-                                            //   return $this->_vitesseActuelle;
-                                            // }
-                                            // public function setCpuClock($speed){
-                                            //   $this->_cpuClock = $speed;
-                                            //   }
-public function setvitesseActuelle($accelerer){
-   $this->_vitesseActuelle=$accelerer;
+    
+    // }
+    public function getMarque(){
+      return $this->_marque;
+      // return $this->_modele;
+      // return $this->_marque;
+    }
+    public function getModele(){
+      return $this->_modele;
+    }
+    public function getnbPortes(){
+      return $this->_nbPortes;
+    }
+    public static function combien(){//méthode statique
+      echo self::$_vitesseActuelle."<br/>";
+    }
+    // public function getvitesseActuelle(){
+      //   return $this->_vitesseActuelle;
+      // }
+      // public function setCpuClock($speed){
+        //   $this->_cpuClock = $speed;
+        //   }
+        public function setvitesseActuelle($accelerer){
+          $this->_vitesseActuelle=$accelerer;
+        }
 }
 public function demarrer(){
-
+  
+  $this->_demarrer=$demarrer;
 }
 
-}
+
 
 
 // $poste=new Voiture(array("Peugeot", "408", 5, $speed));
