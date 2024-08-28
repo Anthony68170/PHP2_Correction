@@ -67,9 +67,13 @@ public Function getvitesseActuelle(){
 
 //Placer les METHODES
 public function demarrer(){
-    echo : "le véhicule " .$this->_marque . " " . $this->_modele . "démarre."
+    echo  "le véhicule " .$this->_marque . " " . $this->_modele . "démarre.";
 }
 
+public function accelerer(){
+    $this->vitesseActuelle +=$vitesse;
+    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "accélère à " .$vitesse. " km/h. ";
+}
 // Créer les élements à obtnir
 
 // public function setMarque($marque){
