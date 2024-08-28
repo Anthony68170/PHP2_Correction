@@ -29,6 +29,45 @@ class Voiture {// definir la classe
             }
         }
     }
+
+    
+// placer les SET  
+public function setMarque($_marque){
+    $this->_marque = $_marque;
+}
+    
+public function setModele($modele){
+    $this->_modele = $modele;
+}
+
+public function setNbPortes($_nbPortes){
+    $this->_marque = $_nbPortes;
+}
+
+public Function setvitesseActuelle($vitesse){
+    $this->vitesseActuelle = $vitesse;
+}
+
+//Placer les GET
+public function getMarque(){
+    return $this->_marque;
+}
+    
+public function getModele(){
+    return $this->_modele;
+}
+
+public function getNbPortes(){
+    return $this->_nbPortes;
+}
+
+public Function getvitesseActuelle(){
+    return $this->vitesseActuelle;
+}
+
+//Placer les METHODES
+public function demarrer(){
+    echo : "le véhicule " .$this->_marque . " " . $this->_modele . "démarre."
 }
 
 // Créer les élements à obtnir
