@@ -1,6 +1,6 @@
 <?php
 
-class VoitureExpl
+class V1
 {
     private $_marque;
     private $modele;
@@ -18,20 +18,20 @@ class VoitureExpl
 // {
 //     return $this->_nbPortes;
 // }
-public function getinfos()
+public function getInfos()
 {
     return $this->_infos;
 }
 
-class VoitureElec extends Voiture
+class Ve1 extends V1
 {
     private $_autonomie;
     public function __construct($autonomie);
     {
-echo "B save";
-parent::save();
+echo "n^hohjîoj p";
+parent::v1();
     }
 
 }
-$voitureExpl = new VoitureElec();
-$voitureExpl->save();
+$v1 = new Ve1();
+$v1->save();
