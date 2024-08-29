@@ -7,14 +7,14 @@
 <?php
 // Créer l'objet principal avec ces attributs 
 class Voiture {// definir la classe
-    protected $marque;// propriétés privées
-    protected $modele;
-    protected $nbPortes;
+    private $marque;// propriétés privées
+    private $modele;
+    private $nbPortes;
     protected $vitesseActuelle;
 
 
     public function __construct($valeurs = array()) {
-        $this->_vitesseActuelle = 0; // Initialiser la vitesse actuelle à 0 par défaut
+        $this->_vitesseActuelle = 0; // Reset la vitesse actuelle à 0 par défaut
         if (!empty($valeurs)) {
             $this->hydrate($valeurs);
         }
@@ -65,7 +65,7 @@ public Function getvitesseActuelle(){
     return $this->vitesseActuelle;
 }
 
-//Placer les METHODES / Ce sont les actions à définir/citer
+//Placer les METHODES / Ce sont les actions à citer PUIS ACTIVER SUR UNE CONDITION
 public function demarrer(){
     echo  "le véhicule " .$this->_marque . " " . $this->_modele . "démarre.";
 }
@@ -80,6 +80,18 @@ public function stopper(){
     echo "Le véhicule " .$this->_marque . " " . $this->_modele . "est à l'arrêt " .$vitesse. " km/h. ";
 }
 
+public function ralentir(){
+    $this->vitesseActuelle -=$vitesse;
+    if _vitesseActuelle
+    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralentit de " .$vitesse. " km/h. ";
+}
+
+// public function ralentir(){
+//     $this-> $vitesse =0;
+//     if $vitesse < 0;
+// }
+// echo "le véhicule a réduit sa vitesse à "
+'
 // NOUVELLE METHODE POUR RALENTIR
 // public function ralentir(){
 //     $this->vitesseActuelle -=$vitesse;
