@@ -81,7 +81,7 @@ public Function getvitesseActuelle(){
 //Placer les METHODES / Ce sont les actions à citer PUIS ACTIVER SUR UNE CONDITION
 public function demarrer()
 {
-    echo  "le véhicule " .$this->_marque . " " . $this->_modele . " démarre.";
+    echo  "<br>Le véhicule " .$this->_marque . " " . $this->_modele . " démarre.";
 }
 
 public function accelerer($vitesse)
@@ -100,9 +100,9 @@ public function ralentir($vitesse){
     // si la vitesse de décélération est inférieure à la vitesse actuelle, et que la vitesse actuelle alors je décélère 
     if ($this->_vitesseActuelle>$vitesse){
         $this->_vitesseActuelle -=$vitesse;
-        echo "<br>Le véhicule " .$this->_marque . " " . $this->_modele . "ralenti de " .$vitesse. " km/h. ";
+        echo "<br>Le véhicule " .$this->_marque . " " . $this->_modele . " ralenti de " .$vitesse. " km/h. ";
     }
-    else echo "<br>Le vitesse de décélration est trop importante ";
+    else echo "<br>Le vitesse de décélération est trop importante ";
 }
 
 // AFFICHER AVEC LES METHODES
