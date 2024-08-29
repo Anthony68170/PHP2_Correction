@@ -74,7 +74,8 @@ public function getNbPortes()
     return $this->_nbPortes;
 }
 
-public Function getvitesseActuelle(){
+public Function getvitesseActuelle()
+{
     return $this->_vitesseActuelle;
 }
 
