@@ -10,10 +10,12 @@ class Voiture {// definir la classe
     private $marque;// propriétés privées
     private $modele;
     private $nbPortes;
+
+    // private $vitesseActuelle=0;
     protected $vitesseActuelle;
 
-
-    public function __construct($valeurs = array()) {
+// Méthode magique => __ (2x underscore)
+    public function __construct($valeurs = array()) { 
         $this->_vitesseActuelle = 0; // Reset la vitesse actuelle à 0 par défaut
         if (!empty($valeurs)) {
             $this->hydrate($valeurs);
@@ -35,7 +37,7 @@ class Voiture {// definir la classe
 public function setMarque($_marque){
     $this->_marque = $_marque;
 }
-    
+
 public function setModele($modele){
     $this->_modele = $modele;
 }
@@ -72,7 +74,7 @@ public function demarrer(){
 
 public function accelerer(){
     $this->vitesseActuelle +=$vitesse;
-    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "accélère de " .$vitesse. " km/h. ";
+    echo "<br />Le véhicule " .$this->_marque . " " . $this->_modele . "accélère de " .$vitesse. " km/h. ";
 }
 
 public function stopper(){
@@ -82,7 +84,9 @@ public function stopper(){
 
 public function ralentir(){
     $this->vitesseActuelle -=$vitesse;
-    if _vitesseActuelle
+    if (_vitesseActuelle){
+        
+    }
     echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralentit de " .$vitesse. " km/h. ";
 }
 
@@ -93,11 +97,11 @@ public function ralentir(){
 // echo "le véhicule a réduit sa vitesse à "
 '
 // NOUVELLE METHODE POUR RALENTIR
-// public function ralentir(){
-//     $this->vitesseActuelle -=$vitesse;
-//     if $this->_vitesseActuelle <$vitesse;
-//     echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralenti de " .$vitesse. " km/h. ";
-// }
+public function ralentir(){
+    $this->vitesseActuelle -=$vitesse;
+    if $this->_vitesseActuelle <$vitesse;
+    echo "Le véhicule " .$this->_marque . " " . $this->_modele . "ralenti de " .$vitesse. " km/h. ";
+}
 
 
 //AFFICHER AVEC LES METHODES
@@ -109,14 +113,14 @@ public function affichagePersVehicule(){
 
 // Créer les élements à obtenir
 $peugeot408 = new Voiture(array(
-    '_marque' => 'Peugeot',
-    '_modele' => '408',
-    '_nbPortes' => 5,)
+'_marque' => 'Peugeot',
+'_modele' => '408',
+'_nbPortes' => 5)
 );
 $citroenC4 = new Voiture(array(
-    '_marque' => 'Citroen',
-    '_modele' => 'C4',
-    '_nbPortes' => 3,)
+'_marque' => 'Citroen',
+'_modele' => 'C4',
+'_nbPortes' => 3)
 );
 
 //UTILISER LES OBJETS/Fonctions 
