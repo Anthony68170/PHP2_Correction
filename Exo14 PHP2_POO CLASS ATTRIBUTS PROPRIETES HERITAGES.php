@@ -4,12 +4,12 @@ class Voiture //
 {
     protected $_marque;
     protected $modele;
-    public function __construct($marque, $modele, $nbPortes)
+    public function __construct($marque, $modele)
     {
         $this -> _marque = $marque;
         $this -> _modele = $modele;
     }
-    public function getInos()
+    public function getInfos()
     {
         return "Marque : " .$this -> _marque . " Modèle : " . $this -> _modele ;
     }
@@ -17,7 +17,8 @@ class Voiture //
 class VoitureElect extends Voiture
 {
     private $_autonomie;
-    public function __construct($autonomie) // Propriété supplémentaire
+    // Propriété supplémentaire
+    // public function __construct($autonomie) 
     {
         $this -> _autonomie = $autonomie;
         echo "n^hohjîoj p";
@@ -26,13 +27,15 @@ class VoitureElect extends Voiture
     }
     public function getInfos()
     {
-        return parent::getInos
+        return parent::getInfos() .$this -> $autonomie."km";
     }
 }
 // INSTANCIER les objets 
 $v1 = new Voiture("Peugot", "408");
 $ve1 = new VoitureElect("BMW", "i3", "100");
 
+echo $v1->getInfos();
+echo $ve1 -> getInfos;
 
 // Ajouter Get pour avoir les infos 
 //Placer les GET
