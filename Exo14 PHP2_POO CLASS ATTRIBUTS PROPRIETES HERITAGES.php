@@ -6,25 +6,25 @@ class Voiture //
     protected $modele;
     public function __construct($marque, $modele)
     {
-        $this -> marque = $marque;
-        $this -> modele = $modele;
+        $this ->_marque = $marque;
+        $this ->_modele = $modele;
     }
     public function getInfos()
     {
-        return "Marque : " .$this -> marque . " Modèle : " . $this -> modele ;
+        return "Marque : " .$this ->_marque . " Modèle : " . $this ->_modele ;
     }
 }
 class VoitureElect extends Voiture
 {
     private $autonomie;
     // Propriété supplémentaire
-    public function __construct($autonomie) 
+    public function __construct($marque, $modele, $autonomie) 
     {
         // parent::v1();
         parent::__construct($marque, $modele);
         // $this -> _marque = $marque;
         // $this -> _modele = $modele;
-        $this -> autonomie = $autonomie;  
+        $this -> $autonomie = $autonomie;  
     }
     public function getInfos()
     {
