@@ -26,7 +26,7 @@ class VoitureElect extends Voiture
     }
     public function getInfos()
     {
-        return parent::getInfos
+        return parent::getInos
     }
 }
 // INSTANCIER les objets 
