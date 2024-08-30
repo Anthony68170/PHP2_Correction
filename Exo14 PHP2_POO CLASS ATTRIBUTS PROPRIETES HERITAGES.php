@@ -2,33 +2,33 @@
 
 class Voiture // 
 {
-    protected $_marque;
+    protected $marque;
     protected $modele;
     public function __construct($marque, $modele)
     {
-        $this -> _marque = $marque;
-        $this -> _modele = $modele;
+        $this -> marque = $marque;
+        $this -> modele = $modele;
     }
     public function getInfos()
     {
-        return "Marque : " .$this -> _marque . " Modèle : " . $this -> _modele ;
+        return "Marque : " .$this -> marque . " Modèle : " . $this -> modele ;
     }
 }
 class VoitureElect extends Voiture
 {
-    private $_autonomie;
+    private $autonomie;
     // Propriété supplémentaire
     public function __construct($autonomie) 
     {
         // parent::v1();
-        parent::__construct($autonomie);
+        parent::__construct($marque, $modele);
         // $this -> _marque = $marque;
         // $this -> _modele = $modele;
-        $this -> _autonomie = $autonomie;  
+        $this -> autonomie = $autonomie;  
     }
     public function getInfos()
     {
-        return "Statut véhicule : " . parent::getInfos() .$this -> _autonomie."km";
+        return "Statut véhicule : " . parent::getInfos() .$this -> autonomie."km";
     }
 }
 // INSTANCIER les objets 
