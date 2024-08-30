@@ -29,41 +29,41 @@ class VoitureElect extends Voiture
         return "Véhicule électrique véhicule : " . parent::getInfos() .$this -> autonomie."km";
     }
 }
-// placer les SET  
-public function setMarque($marque)
-{
-    $this->_marque = $marque;
-}
-
-public function setModele($modele)
-{
-    $this->_modele = $modele;
-}
-
-public function setNbPortes($nbPortes)
-{
-    $this->_nbPortes = $nbPortes;
-}
-
-//Placer les GET
-public function getMarque()
-{
-    return $this->_marque;
-}
+    // placer les SET  
+    public function setMarque($marque)
+    {
+        $this->marque = $marque;
+    }
     
-public function getModele()
-{
-    return $this->_modele;
-}
-
-public function getNbPortes()
-{
-    return $this->_nbPortes;
-}
-
-// INSTANCIER les objets 
-$v1 = new Voiture("Peugot", "408");
-$ve1 = new VoitureElect("BMW", "i3", "100");
+    public function setModele($modele)
+    {
+        $this->modele = $modele;
+    }
+    
+    public function setAutonomie($autonomie)
+    {
+        $this->autonomie = $autonomie;
+    }
+    
+    //Placer les GET
+    public function getMarque()
+    {
+        return $this->marque;
+    }
+    
+    public function getModele()
+    {
+        return $this->modele;
+    }
+    
+    public function getAutonomie()
+    {
+        return $this->autonomie;
+    }
+    
+    // INSTANCIER les objets 
+    $v1 = new Voiture("Peugot", "408");
+    $ve1 = new VoitureElect("BMW", "i3", "100");
 
 echo $v1->getInfos();
 echo $ve1 -> getInfos();
