@@ -20,16 +20,15 @@ class VoitureElect extends Voiture
     // Propriété supplémentaire
     public function __construct($autonomie) 
     {
-        echo "n^hohjîoj p";
         // parent::v1();
-        parent::__construct($marque, $modele)
-        {
-            $this -> _autonomie = $autonomie;
-        }
+        parent::__construct($autonomie);
+        // $this -> _marque = $marque;
+        // $this -> _modele = $modele;
+        $this -> _autonomie = $autonomie;  
     }
     public function getInfos()
     {
-        return "Statu véhicule : " . parent::getInfos() .$this -> _autonomie."km";
+        return "Statut véhicule : " . parent::getInfos() .$this -> _autonomie."km";
     }
 }
 // INSTANCIER les objets 
