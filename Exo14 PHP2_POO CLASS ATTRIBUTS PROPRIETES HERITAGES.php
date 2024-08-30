@@ -6,12 +6,12 @@ class Voiture //
     protected $modele;
     public function __construct($marque, $modele)
     {
-        $this ->_marque = $marque;
-        $this ->_modele = $modele;
+        $this ->marque = $marque;
+        $this ->modele = $modele;
     }
     public function getInfos()
     {
-        return "Marque : " .$this ->_marque . " Modèle : " . $this ->_modele ;
+        return "Marque : " .$this ->marque . " Modèle : " . $this ->modele ;
     }
 }
 class VoitureElect extends Voiture
@@ -22,15 +22,45 @@ class VoitureElect extends Voiture
     {
         // parent::v1();
         parent::__construct($marque, $modele);
-        // $this -> _marque = $marque;
-        // $this -> _modele = $modele;
-        $this -> $autonomie = $autonomie;  
+        $this -> autonomie = $autonomie;  
     }
     public function getInfos()
     {
-        return "Statut véhicule : " . parent::getInfos() .$this -> autonomie."km";
+        return "Véhicule électrique véhicule : " . parent::getInfos() .$this -> autonomie."km";
     }
 }
+// placer les SET  
+public function setMarque($marque)
+{
+    $this->_marque = $marque;
+}
+
+public function setModele($modele)
+{
+    $this->_modele = $modele;
+}
+
+public function setNbPortes($nbPortes)
+{
+    $this->_nbPortes = $nbPortes;
+}
+
+//Placer les GET
+public function getMarque()
+{
+    return $this->_marque;
+}
+    
+public function getModele()
+{
+    return $this->_modele;
+}
+
+public function getNbPortes()
+{
+    return $this->_nbPortes;
+}
+
 // INSTANCIER les objets 
 $v1 = new Voiture("Peugot", "408");
 $ve1 = new VoitureElect("BMW", "i3", "100");
