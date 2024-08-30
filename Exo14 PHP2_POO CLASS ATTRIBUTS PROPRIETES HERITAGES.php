@@ -28,7 +28,6 @@ class VoitureElect extends Voiture
     {
         return "Véhicule électrique véhicule : " . parent::getInfos() .$this -> autonomie."km";
     }
-}
     // placer les SET  
     public function setMarque($marque)
     {
@@ -61,6 +60,7 @@ class VoitureElect extends Voiture
         return $this->autonomie;
     }
     
+}
     // INSTANCIER les objets 
     $v1 = new Voiture("Peugot", "408");
     $ve1 = new VoitureElect("BMW", "i3", "100");
