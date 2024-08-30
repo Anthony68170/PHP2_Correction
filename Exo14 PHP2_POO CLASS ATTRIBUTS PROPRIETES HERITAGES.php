@@ -19,8 +19,8 @@ class Voiture {
     }
 }
 
-// Classe dérivée : VoitureElect (ici, je mets HARNAISCONNECTE pour les harnais et dispositifs connectés avec capteurs)
-// HarnaisConnecte représentera des harnais et dispositifs avec différents capteurs (en fonction du modèle)
+// Classe dérivée : VoitureElect (ici, je mets SUPPORTSCONNECTE pour les supports et dispositifs connectés avec capteurs)
+// SupportsConnecte représente des supports et dispositifs avec différents capteurs (en fonction du modèle)
 class VoitureElect extends Voiture {
     private $autonomie; // Modifier Propriété "$autonomie" pour le % de charge restante des capteurs (???pour chaque capteur ????)
     // Ajouter Propriété "$nbCapteurs" pour le nombre de capteurs
