@@ -18,16 +18,18 @@ class VoitureElect extends Voiture
 {
     private $_autonomie;
     // Propriété supplémentaire
-    // public function __construct($autonomie) 
+    public function __construct($autonomie) 
     {
         $this -> _autonomie = $autonomie;
         echo "n^hohjîoj p";
         // parent::v1();
-        parent::__construct($marque, $modele);
+        parent::__construct($marque, $modele){
+            
+        }
     }
     public function getInfos()
     {
-        return parent::getInfos() .$this -> $autonomie."km";
+        return "Statu véhicule : " . parent::getInfos() .$this -> _autonomie."km";
     }
 }
 // INSTANCIER les objets 
@@ -35,7 +37,7 @@ $v1 = new Voiture("Peugot", "408");
 $ve1 = new VoitureElect("BMW", "i3", "100");
 
 echo $v1->getInfos();
-echo $ve1 -> getInfos;
+echo $ve1 -> getInfos();
 
 // Ajouter Get pour avoir les infos 
 //Placer les GET
