@@ -2,29 +2,36 @@
 
 class Voiture // 
 {
-    private $_marque;
-    private $modele;
+    protected $_marque;
+    protected $modele;
     public function __construct($marque, $modele, $nbPortes)
     {
         $this -> _marque = $marque;
         $this -> _modele = $modele;
     }
-    public function getInos(){
-        return "Marque : " $this -> _marque . " Modèle : " . $this -> _modele .;
+    public function getInos()
+    {
+        return "Marque : " .$this -> _marque . " Modèle : " . $this -> _modele ;
     }
 }
-class Ve1 extends V1
+class VoitureElect extends Voiture
 {
     private $_autonomie;
-    public function __construct($autonomie);
+    public function __construct($autonomie) // Propriété supplémentaire
     {
-        $this -> $_autonomie = $autonomie;
+        $this -> _autonomie = $autonomie;
         echo "n^hohjîoj p";
-        parent::v1();
+        // parent::v1();
+        parent::__construct($marque, $modele);
     }
-    
+    public function getInfos()
+    {
+        return parent::getInfos
+    }
 }
-
+// INSTANCIER les objets 
+$v1 = new Voiture("Peugot", "408");
+$ve1 = new VoitureElect("BMW", "i3", "100");
 
 
 // Ajouter Get pour avoir les infos 
