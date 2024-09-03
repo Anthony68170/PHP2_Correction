@@ -10,7 +10,7 @@ class Voiture {
     // Constructeur pour initialiser la marque et le modèle (ici pour créer un support avec son fabricant et son type)
     public function __construct($marque, $modele) {
         $this->marque = $marque;  // Ici je stocke la marque du fabricant dans la propriété
-        $this->modele = $modele;  // Ici je stocke le type de support dans la propriété (Harnais, Chariot, Orthèse, EPI d'officier de Hervé.)
+        $this->modele = $modele;  // Ici je stocke le TYPE DE SUPPORT dans la propriété (Harnais, Chariot, Orthèse, EPI d'officier de Hervé.)
     }
 
     // Méthode pour obtenir les infos de base du support (ici, je récupère les infos de base comme le fabricant et le type de support)
